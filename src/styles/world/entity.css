@@ -1,43 +1,42 @@
 .entity {
-    position: absolute;
+  position: absolute;
 }
 
 .living-entity {
-    width: 30px;
-    height: 30px;
-    background-size: 30px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
 }
 
 .human-entity {
-    background-image: url("../../assets/human.png");
+  background-image: url("../../assets/human.png");
 }
 
 .rabbit-entity {
-    background-image: url("../../assets/rabbit.png");
+  background-image: url("../../assets/rabbit.png");
 }
 
 .wolf-entity {
-    background-image: url("../../assets/wolf.png");
+  background-image: url("../../assets/wolf.png");
 }
 
 .bear-entity {
-    background-image: url("../../assets/bear.png");
+  background-image: url("../../assets/bear.png");
 }
 
 .static-entity {
-    
 }
 
 .grass-entity {
-    width: 20px;
-    height: 20px;
-    background-size: 20px;
-    background-image: url("../../assets/grass.png");
+  width: 20px;
+  height: 20px;
+  background-size: 20px;
+  background-image: url("../../assets/grass.png");
 }
 
 .forest-entity {
-    width: 30px;
-    height: 30px;
-    background-size: 30px;
-    background-image: url("../../assets/tree.png");
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+  background-image: url("../../assets/tree.png");
 }

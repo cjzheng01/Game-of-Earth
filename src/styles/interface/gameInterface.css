@@ -1,176 +1,165 @@
-
 #game-interface {
-    width: 100vw;
-    height: 100vh;
-    background-color: whitesmoke;
-    overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-color: whitesmoke;
+  overflow: hidden;
 }
 
 #current-time {
+  position: absolute;
+  font-weight: bold;
 
-    position: absolute;
-    font-weight: bold;
+  left: 5px;
+  top: 5px;
 
-    left: 5px;
-    top: 5px;
-
-    width: auto;
-    height: 16px;
-    line-height: 16px;
-
+  width: auto;
+  height: 16px;
+  line-height: 16px;
 }
 
 #tool-list {
+  z-index: 100;
 
-    z-index: 100;
+  position: relative;
+  float: right;
+  margin: 5px;
 
-    position: relative;
-    float: right;
-    margin: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    
-    width: 80px;
-    height: auto;
+  width: 80px;
+  height: auto;
 
-    border-radius: 10px;
-    background-color: lightgrey;
+  border-radius: 10px;
+  background-color: lightgrey;
 }
 
 #living-tool-list {
-
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 #static-tool-list {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .tool-button {
-    position: relative;
-    
-    width: 30px;
-    height: 30px;
+  position: relative;
 
-    margin: 5px;    
+  width: 30px;
+  height: 30px;
+
+  margin: 5px;
 }
 
 .tool-button-img {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 }
 
 #entity-name-tag {
+  z-index: 100;
 
-    z-index: 100;
+  position: absolute;
 
-    position: absolute;
+  width: 100px;
+  height: 30px;
 
-    width: 100px;
-    height: 30px;
-    
-    padding: 10px;
-    text-align: center;
-    line-height: 30px;
-    font-size: 30px;
-    border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 30px;
+  border-radius: 10px;
 
-    user-select: none;
-    background-color: lightgrey;
-    color: black;
+  user-select: none;
+  background-color: lightgrey;
+  color: black;
 }
 
 #entity-info-container {
-    z-index: 100;
-    
-    position: absolute;
+  z-index: 100;
 
-    display: flex;
-    flex-direction: column;
+  position: absolute;
 
-    width: 100px;
-    height: auto;
+  display: flex;
+  flex-direction: column;
 
-    padding: 10px;
-    border-radius: 10px;
-    background-color: lightgrey;
+  width: 100px;
+  height: auto;
+
+  padding: 10px;
+  border-radius: 10px;
+  background-color: lightgrey;
 }
 
 .entity-info-tag-container {
-    
-    position: relative;
+  position: relative;
 
-    width: 100%;
-    height: 30px;
-    line-height: 30px;
-
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
 }
 
 .entity-info-tag-name {
+  position: relative;
 
-    position: relative;
+  float: left;
+  font-weight: bold;
+  font-size: 16px;
 
-    float: left;
-    font-weight: bold;
-    font-size: 16px;
-
-    width: auto;
-    height: 30px;
-    line-height: 30px;
-
+  width: auto;
+  height: 30px;
+  line-height: 30px;
 }
 
 .entity-info-tag-value {
-    position: relative;
+  position: relative;
 
-    float: right;
-    font-size: 13px;
+  float: right;
+  font-size: 13px;
 
-    width: auto;
-    height: 30px;
-    line-height: 30px;
+  width: auto;
+  height: 30px;
+  line-height: 30px;
 }
 
 #cursor {
+  z-index: 101;
 
-    z-index: 101;
+  position: absolute;
+  width: 30px;
+  height: 30px;
 
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    
-    background-size: 30px;
+  background-size: 30px;
 
-    cursor: none;
+  cursor: none;
 }
 
 .cursor-rabbit {
-    background-image: url("../../assets/rabbit.png");
+  background-image: url("../../assets/rabbit.png");
 }
 
 .cursor-human {
-    background-image: url("../../assets/human.png");
+  background-image: url("../../assets/human.png");
 }
 
 .cursor-wolf {
-    background-image: url("../../assets/wolf.png");
+  background-image: url("../../assets/wolf.png");
 }
 
 .cursor-bear {
-    background-image: url("../../assets/bear.png");
+  background-image: url("../../assets/bear.png");
 }
 
 .cursor-grass {
-    background-image: url("../../assets/grass.png");
+  background-image: url("../../assets/grass.png");
 }
 
 .cursor-forest {
-    background-image: url("../../assets/tree.png");
+  background-image: url("../../assets/tree.png");
 }
 
 .cursor-cloud {
-    background-image: url("../../assets/cloud.png");
+  background-image: url("../../assets/cloud.png");
 }
